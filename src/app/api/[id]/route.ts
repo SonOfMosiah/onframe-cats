@@ -109,8 +109,9 @@ const generateMetadata = ({id, image = 'rico.png'}: {id: number, image?: string}
                 <meta name="fc:frame" content="vNext">
                 <meta name="fc:frame:image" content="${image}">
                 <meta name="fc:frame:post_url" content="https://onframe-cats.vercel.app/api/${id}">
-                <meta property="fc:frame:button:1" content="Random"/>
-                <meta property="fc:frame:button:2" content="Next"/>
+                <meta property="fc:frame:button:1" content="⬅️"/>
+                <meta property="fc:frame:button:2" content="➡️"/>
+                <meta property="fc:frame:button:3" content="Random"/>
               </head>
               <body>
                 <p>Cat of Farcaster</p>
