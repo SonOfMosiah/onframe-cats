@@ -7,7 +7,7 @@ export const dynamic = 'force-dynamic';
 const initialId = 0;
 
 const frameMetadata = getFrameMetadata({
-    image: "/rico.png",
+    image: "rico.png",
     post_url: `https://onframe-cats.vercel.app/api/${initialId}`,
     buttons: ['️️⬅️', '️➡️', 'Random']
 });

@@ -54,7 +54,7 @@ async function getResponse(req: NextRequest, id: number): Promise<NextResponse> 
         return generateMetadata({id})
     }
 
-    const imagesSet: Set<string> = new Set(['/rico.png']);
+    const imagesSet: Set<string> = new Set(['rico.png']);
 
     for (const cast of allCasts) {
         if (cast.embeds.length > 0) {
@@ -100,7 +100,7 @@ async function getResponse(req: NextRequest, id: number): Promise<NextResponse> 
     return generateMetadata({id: nextId, image: nextImage})
 }
 
-const generateMetadata = ({id, image = '/rico.png'}: {id: number, image?: string}) => {
+const generateMetadata = ({id, image = 'rico.png'}: {id: number, image?: string}) => {
     return new NextResponse(`
             <!DOCTYPE html>
             <html>
